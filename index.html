@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-image: url(back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body  >
+    <h1 id="time" class="colo"></h1>
+</body>
+<script>
+   
+   document.onclick= function tellTime(e){
+    var now=new Date();
+    var theHr=now.getHours();
+    var theMin=now.getMinutes();
+    var theSec=now.getSeconds();
+    document.getElementById("time").innerHTML= "  Time  "+theHr+":"+theMin+":"+theSec+"<br>"+"page X="+e.pageX+ " | page Y="+e.pageY
+    
+    }
+       
+
+</script>
+</html
